@@ -14,7 +14,7 @@ export function Dropdown({open, setopen}){
  
     <div   className="inline-block text-left text-xs">
       {/* Button */}
-      <button
+      <button 
         onClick={() => setopen(!open)}
         className="relative  px-3 py-1 mr-3  bg-black text-white rounded-md cursor-pointer hover:bg-green-900"
       >
@@ -25,11 +25,11 @@ export function Dropdown({open, setopen}){
 
       {/* Dropdown */}
       {open && (
-        <div className="absolute right-4 mt-2 w-39 bg-white shadow-lg shadow-blue-200 rounded-md p-2">
+        <div  className="absolute right-4 mt-2 w-39 bg-white shadow-lg shadow-blue-200 rounded-md p-2">
           <button className="block w-full text-left px-2 py-2 hover:bg-gray-100">
             {user}
           </button> <hr className="text-blue-400" />
-          <button  onMouseDownCapture={()=> seton(false)}  onMouseEnter={()=> seton(true)} className="relative block w-full text-left px-3 py-2 hover:bg-gray-100 cursor-pointer">
+          <button  onMouseLeave={()=> seton(false)}  onMouseEnter={()=> seton(true)} className="relative block w-full text-left px-3 py-2 hover:bg-gray-100 cursor-pointer">
             Theme
           </button>
           <button onClick={()=>{
@@ -43,7 +43,9 @@ export function Dropdown({open, setopen}){
         </div>
       )}
 
-      {/* inside dropdown */}
+      {/* condition rendering in react // show this only when on is true */}
+      {/* inside dropdown */} 
+
       {on && (
         <div className="absolute right-43 top-25 w-12 bg-white shadow-lg shadow-blue-200">
           <button className="block w-full text-left px-2 py-2 hover:bg-gray-100 cursor-pointer">light</button>

@@ -23,6 +23,5 @@ export function Appbar(){
         <div className=" font-semibold">Your balance   </div>
         <div className="">₹{store.toFixed(2)}</div>
         </div>
-
     </div>
 }

@@ -1,6 +1,6 @@
 const mongoose=require('mongoose')
 
-mongoose.connect('mongodb+srv://codingwithna9170_db_user:koTJhtPaXCqY5iu5@cluster0.cx45irp.mongodb.net/')//new one koTJhtPaXCqY5iu5
+mongoose.connect('mongodb+srv://codingwithna9170_db_user:MongodbUrLshORT@cluster0.cx45irp.mongodb.net/')//new one koTJhtPaXCqY5iu5
 
 const PaytmShema=new mongoose.Schema({username:String, firstname:String, lastname:String, password:String} )
 const acountSchema=new mongoose.Schema({
