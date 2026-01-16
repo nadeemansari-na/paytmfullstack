@@ -28,7 +28,7 @@ console.log(localStorage.getItem('token'))
                 setamount(Number(e.target.value)||0)
             }} placeholder={"amount send"}></Inputbox>
             <Buttonbox  onclick={async ()=>{
-           const res=await axios.post('http://localhost:3000/api/v1/acount/transfer',{
+           const res=await axios.post('https://paytmfullstack-z2x9.onrender.com/api/v1/acount/transfer',{
                 amount:amount,
                 to:id
             },{

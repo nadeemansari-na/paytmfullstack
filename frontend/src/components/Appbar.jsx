@@ -8,7 +8,7 @@ export function Appbar(){
     useEffect( ()=>{
       async  function call(){
 
-          const result= await axios.get('http://localhost:3000/api/v1/acount/getbalance',{
+          const result= await axios.get('https://paytmfullstack-z2x9.onrender.com/api/v1/acount/getbalance',{
               headers:{
                   Authorization:`Bearer ${localStorage.getItem('token')}`
               }

@@ -9,7 +9,7 @@ export function Filter(){
         useEffect( ()=>{
             const fetchdata= async ()=>{
                 console.log('filter=',{Search})
-                const response=await axios.get(`http://localhost:3000/api/v1/user/bulk?filter=${Search}`)
+                const response=await axios.get(`https://paytmfullstack-z2x9.onrender.com/api/v1/user/bulk?filter=${Search}`)
                setdabba(response.data.user)
 
             }

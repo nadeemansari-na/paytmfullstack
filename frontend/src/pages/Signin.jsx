@@ -34,13 +34,12 @@ export const Signin = () => {
                 }} placeholder={"Minimum 7 character"} label={"Password"}></Inputbox>
                 <div className="mt-3 ">
                     <Buttonbox onclick={async (e) => {
-                        const ret = await axios.get('http://localhost:3000/api/v1/user/signin', {
+                        const ret = await axios.get('https://paytmfullstack-z2x9.onrender.com/api/v1/user/signin', {
                             headers: {
                                 username: Username,
                                 password
                             }
                         })
-                        console.log(ret.data)
                         
                         
                       if(ret.data.msg=="got the token"){ 
