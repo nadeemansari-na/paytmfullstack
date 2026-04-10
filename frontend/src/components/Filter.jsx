@@ -29,7 +29,7 @@ function User({dabba}){
     const navigate=useNavigate()
     return <div id="83">
             {dabba.map(e=>
-        <div id={key++} className="mt-5 flex justify-between hover:bg-gray-100">
+        <div id={key++} className="mt-5 flex justify-between pt-5 pb-5 rounded-2xl border-2 border-transparent hover:border-gray-500 px-6 py-3 transition-all duration-300 hover:shadow-2">
             <div  className="flex gap-7 items-center">
             <div className="flex justify-center items-center rounded-full w-10 h-10 bg-green-100 ">
                 <div className="text-green font-semibold">

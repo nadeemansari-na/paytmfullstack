@@ -16,7 +16,7 @@ export  function PaymentApp(){
        <Dropdown open={open} setopen={setopen}/>
          </div> <br /><hr className="text-blue-200 text-shadow-blue-200" />
         <Appbar amount={"Rs 10000"} />
-
+        
 
         <Filter></Filter>
         

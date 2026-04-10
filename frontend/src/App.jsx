@@ -13,7 +13,6 @@ function App() {
       <Routes>
         <Route path="/signin" element={<Prevent ></Prevent>}></Route>
         <Route path="/" element={ <Signup/>}></Route>
-        {/* <Route path="/signin" element={ <Signin/>}></Route> */}
         <Route path="/sendmoney" element={<Sendmoney></Sendmoney>}></Route>
         <Route path="/payment" element={<PaymentApp></PaymentApp>}></Route>
       </Routes>

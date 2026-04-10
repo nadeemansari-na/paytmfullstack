@@ -20,7 +20,7 @@ export const Signin = () => {
   
     return <div className="flex justify-center items-center h-screen w-screen bg-gray-200">
         <div className="flex justify-center items-center bg-white rounded-2xl shadow-amber-400">
-            <div className="flex flex-col  p-5 h-3/4 gap-3">
+            <div className="flex flex-col  p-3 h-2/3 gap-3 sm:p-5 sm:h-3/4">
                 <Heading label={"Sign in"}></Heading>
                 <div className="mb-3 text-center w-44">
                 <Subheading  label={"Enter your information to access your account"}></Subheading>

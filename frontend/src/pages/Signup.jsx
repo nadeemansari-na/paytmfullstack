@@ -21,6 +21,9 @@ export const Signup = () => {
         }
     }, [navigate]);
 
+    console.log(Username, Firstname, Lastname, Password)
+    console.log(localStorage.getItem("token"))
+        // if(!localStorage.getItem("token") || localStorage.getItem(" ")){
     return <div className="flex justify-center items-center h-screen w-screen bg-gray-200">
         <div className="flex justify-center items-center bg-white rounded-2xl shadow-amber-400">
             <div className="flex flex-col  p-7 gap-4">
@@ -52,7 +55,8 @@ export const Signup = () => {
                     })
                     
                     
-                  
+                    //  const dabba=localStorage.getItem("token")
+                    console.log("msg:"+result.data.msg)
                     if(result.data.msg=="user created successfully"){
                         localStorage.setItem("token",result.data.token)
                         localStorage.setItem("user",result.data.username)
